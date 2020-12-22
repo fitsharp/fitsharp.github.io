@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!--2019-05-07 13:33:39,19,0,0,0--><!-- saved from url=(0014)about:internet -->
+<!--2020-12-21 14:57:35,19,0,0,0--><!-- saved from url=(0014)about:internet -->
 <!-- fitSharp
 Copyright © Syterra Software Inc. All rights reserved.
 The use and distribution terms for this software are covered by the Common Public License 1.0 (http://opensource.org/licenses/cpl.php)
@@ -36,7 +36,7 @@ The test files used in the following examples are from <a href="../Fit/SampleInp
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml</td></tr>
 </table>
 <br>
 Test result counts are accumulated for all files processed.<br>
@@ -103,7 +103,7 @@ The input can be a single file. In this case, the suite setup and teardown are n
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml ,-i,document\fitSharp\Fit\SampleInputFiles\SampleSubFolder\SampleFailingTest.html</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml ,-i,document\fitSharp\Fit\SampleInputFiles\SampleSubFolder\SampleFailingTest.html</td></tr>
 </table>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
@@ -123,7 +123,7 @@ To process a selected file with the associated suite set up and tear down, use t
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml ,-s,SampleSubFolder\SampleFailingTest.html</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml ,-s,SampleSubFolder\SampleFailingTest.html</td></tr>
 </table>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
@@ -134,19 +134,19 @@ XML output can be created.<br>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfigXmlOutput.xml</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfigXmlOutput.$OS$.xml</td></tr>
 </table>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td>file system</td></tr>
-<tr><td class="pass"><span class="fit_keyword">ensure</span></td><td><span class="fit_member">file</span></td><td>test\output\XmlOutput.xml</td><td><span class="fit_member">same as</span></td><td>out\SampleXmlOutput.xml</td></tr>
+<tr><td class="pass"><span class="fit_keyword">ensure</span></td><td><span class="fit_member">file with paths</span></td><td>test\output\XmlOutput.xml</td><td><span class="fit_member">same as</span></td><td>out\SampleXmlOutput.xml</td></tr>
 </table>
 <br>
 Files and directories can be excluded.<br>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml,-x,Sample</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml,-x,Sample</td></tr>
 </table>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
@@ -157,7 +157,7 @@ The output folder can be overridden on the command line.<br>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml,-o,test\output\overridden</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml,-o,test\output\overridden</td></tr>
 </table>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
@@ -166,7 +166,7 @@ The output folder can be overridden on the command line.<br>
 </table>
 </div>
 <div style="width:100%;text-align:right">
-<span class="footer">Copyright &copy; 2019 Syterra Software Inc. All rights reserved.</span>
+<span class="footer">Copyright &copy; 2020 Syterra Software Inc. All rights reserved.</span>
 </div>
 
 </body>

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!--2019-05-07 13:33:40,4,0,0,0--><!-- saved from url=(0014)about:internet -->
+<!--2020-12-21 14:57:35,4,0,0,0--><!-- saved from url=(0014)about:internet -->
 <!-- fitSharp
 Copyright © Syterra Software Inc. All rights reserved.
 The use and distribution terms for this software are covered by the Common Public License 1.0 (http://opensource.org/licenses/cpl.php)
@@ -27,14 +27,14 @@ The test files used in the following examples are from <a href="../Fit/SampleInp
 <tr><td><span class="fit_keyword">with</span></td><td>file system</td></tr>
 <tr><td><span class="fit_member">make empty folder</span></td><td>test</td></tr>
 <tr><td><span class="fit_member">make empty folder</span></td><td>test\output</td></tr>
-<tr><td><span class="fit_member">alias folder</span></td><td>document\fitsharp\Fit\SampleOutputFiles</td><td><span class="fit_member">as</span></td><td>out</td></tr>
+<tr><td><span class="fit_member">alias folder</span></td><td>document\fitSharp\Fit\SampleOutputFiles</td><td><span class="fit_member">as</span></td><td>out</td></tr>
 </table>
 <br>
 <a href="../Fit/FolderRunner.html">Folder Runner</a>, with -t followed by tagList, executes all pages with given tags.<br>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml,-t,SampleTag</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml,-t,SampleTag</td></tr>
 </table>
 <br>
 Test result counts are accumulated for all files processed.<br>
@@ -58,7 +58,7 @@ Wildcards are evaluated in tag filters.<br>
 <br>
 <table border="1" cellpadding="2" cellspacing="0">
 <tr><td><span class="fit_keyword">with</span></td><td><span class="fit_keyword">new</span></td><td><span class="fit_SUT">folder runner story</span></td></tr>
-<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.xml,-t,Samp*T?g</td></tr>
+<tr><td><span class="fit_member">run</span></td><td>-c,document\fitSharp\Fit\SampleInputFiles\SampleConfig.$OS$.xml,-t,Samp*T?g</td></tr>
 </table>
 <br>
 The wildcard filter should have matched the tagged SampleSimpleTest page again.<br>
@@ -69,7 +69,7 @@ The wildcard filter should have matched the tagged SampleSimpleTest page again.<
 </table>
 </div>
 <div style="width:100%;text-align:right">
-<span class="footer">Copyright &copy; 2019 Syterra Software Inc. All rights reserved.</span>
+<span class="footer">Copyright &copy; 2020 Syterra Software Inc. All rights reserved.</span>
 </div>
 
 </body>
